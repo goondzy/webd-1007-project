@@ -1,0 +1,77 @@
+<!-------w---------
+
+    Project 3 Website Development & Deployment
+    Name: Danielle Gundayao
+    Date: December 28, 2022
+    Description: Website Development & Deployment
+
+------------------>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>frills</title>
+        <link href="https://fonts.googleapis.com/css2?family=Domine&family=Inter&family=League+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="project3.css">
+        <script src="project3.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <a href="index.html" id="title"><h1>frills</h1></a>
+            <a href="index.html" id="subtitle"><h2>hair accessories</h2></a>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li class="active"><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="contactformwrap">
+                <form id="contactform" method="post" action="index.html">
+                    <p>For orders and more information about our products, please contact us using the form below.</p>
+                    <fieldset>
+                        <legend>Contact Form</legend>
+                        <ul>
+                            <li>
+                                <label for="name">Name</label>
+                                <input id="name" name="name" type="text">
+                                <p class="error" id="name_error">* This field is required.</p>
+                            </li>
+                            <li>
+                                <label for="phone">Phone #</label>
+                                <input id="phone" name="phone" type="number">
+                                <p class="error" id="phone_error">* This field is required.</p>
+                                <p class="error" id="phoneformat_error">* Please enter a valid phone number.</p>
+                            </li>
+                            <li>
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="text">
+                                <p class="error" id="email_error">* This field is required.</p>
+                                <p class="error" id="emailformat_error">* Please enter a valid email address.</p>
+                            </li>
+                            <li>
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5"></textarea>
+                                <p class="error" id="message_error">* This field is required.</p>
+                            </li>
+                        </ul>
+                        <div id="buttons">
+                            <button type="reset" id="clear">Clear</button>
+                            <button type="submit" id="submit">Submit</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+            <p>(An RRC Web Development 1 Project Dec 2022)</p>
+        </footer>
+    </body>
+</html>
